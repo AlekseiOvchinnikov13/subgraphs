@@ -1,0 +1,58 @@
+@import '../variables.module';
+
+.dataRow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) repeat(2, 200px) 70px;
+
+  p {
+    background-color: $HIGH_FIDELITY_BLACK_COLOR;
+    border: 1px solid $HIGH_FIDELITY_ORANGE_COLOR;
+    color: $HIGH_FIDELITY_BLUE_COLOR;
+    padding: .5em .3em;
+
+    font-size: 18px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    place-self: center;
+  }
+}
+
+.dataRowTitle {
+  p {
+    font-weight: 700;
+  }
+}
+
+.dataRowData {
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.allocationTable {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+
+  .dataRow {
+    grid-template-columns: repeat(6, 1fr) repeat(2, 200px);
+
+    p {
+      font-weight: 400;
+      color: $FONT_WHITE_COLOR;
+    }
+  }
+
+  .dataRow + .dataRow {
+    p {
+      word-break: break-all;
+    }
+  }
+}
+
+

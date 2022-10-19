@@ -1,0 +1,9 @@
+@import '../variables.module';
+
+.indexersTable {
+  overflow: auto;
+
+  .address {
+    word-break: break-all;
+  }
+}

@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/pages/Home.module.scss';
 import {ApolloClient, gql, InMemoryCache} from '@apollo/client';
-import IndexerTable from '../components/IndexerTable';
+import Tab from '../components/Tab';
+import {TAB_NAMES} from '../data/tabs';
 
 export default function Home() {
 
@@ -11,10 +12,7 @@ export default function Home() {
         <title>The Graph</title>
       </Head>
       <main className={styles.main}>
-        <div className={styles.indexers}>
-          <h3 className={styles.titleGroup}>Indexers</h3>
-          <IndexerTable/>
-        </div>
+        <Tab items={TAB_NAMES}/>
       </main>
     </div>
   );

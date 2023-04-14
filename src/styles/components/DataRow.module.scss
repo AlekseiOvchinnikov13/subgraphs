@@ -3,12 +3,12 @@
 .dataRow {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr) repeat(2, 200px) 70px;
+  grid-template-columns: repeat(6, 1fr) repeat(2, 200px);
 
   p {
-    background-color: $HIGH_FIDELITY_BLACK_COLOR;
+    background-color: $BACKGROUND_COLOR;
     border: 1px solid $HIGH_FIDELITY_ORANGE_COLOR;
-    color: $HIGH_FIDELITY_BLUE_COLOR;
+    color: $FONT_COLOR;
     padding: .5em .3em;
 
     font-size: 18px;

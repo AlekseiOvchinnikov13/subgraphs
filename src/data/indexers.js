@@ -20,26 +20,3 @@ export const INDEXERS_DATA = [
     indexer: '0x55F3DCDaf0b73f7f0c761a9070d8865F37986e2C'
   },
 ];
-
-export const TABLE_COLUMNS = [
-  'Indexer Address',
-  'Name',
-  'Available Stake',
-  'Allocated Stake',
-  'Unallocated Stake',
-  'Total Pending Rewards',
-  'Time of Oldest Allocation',
-  'Time of Newest Allocation',
-  'GRT-USD',
-];
-
-export const ALLOCATION_COLUMNS = [
-  'Subgraph',
-  'Deployment',
-  'Allocated',
-  'Active Epoch',
-  'Active Time',
-  'Pending Rewards',
-  'Pending Reward Rate',
-  'Allocation ID'
-];

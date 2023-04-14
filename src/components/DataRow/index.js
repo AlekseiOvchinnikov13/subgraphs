@@ -6,7 +6,7 @@ import {getAllocationData, getColumnTitlesRow} from '../../utils';
 import DataCell from '../DataCell';
 import styles from '../../styles/components/DataRow.module.scss';
 
-const DataRow = ({children, isTitle, className}) => {
+const DataRow = ({children, isTitle, isInner, className}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [address, setAddress] = useState();
 
@@ -28,9 +28,9 @@ const DataRow = ({children, isTitle, className}) => {
     );
 
   return (
-    isTitle
+    isTitle || isInner
       ? <div
-        className={`${styles.dataRow} ${isTitle ? styles.dataRowTitle : styles.dataRowData} ${className}`}
+        className={`${styles.dataRow} ${isTitle || isInner ? styles.dataRowTitle : styles.dataRowData} ${className}`}
       >
         {children}
       </div>
@@ -42,7 +42,7 @@ const DataRow = ({children, isTitle, className}) => {
         {isOpen &&
           <div className={styles.allocationTable}>
             {getColumnTitlesRow(ALLOCATION_COLUMNS)}
-            <DataRow isTitle>
+            <DataRow isInner>
               {data.length > 0 && !isLoading
                 ? data.map(allocation =>
                   getAllocationRow(allocation)

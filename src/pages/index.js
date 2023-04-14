@@ -5,7 +5,7 @@ import Tab from '../components/Tab';
 import {TAB_NAMES} from '../data/tabs';
 
 export default function Home() {
-
+  console.log(process.env.NEXT_PUBLIC_ETHERSCAN_API);
 
   return (
     <div className={styles.container}>

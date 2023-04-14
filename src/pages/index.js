@@ -6,6 +6,7 @@ import {TAB_NAMES} from '../data/tabs';
 
 export default function Home() {
 
+
   return (
     <div className={styles.container}>
       <Head>

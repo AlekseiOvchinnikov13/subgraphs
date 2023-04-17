@@ -49,7 +49,7 @@ const OperatorTransactions = ({data: {beneficiary, operator, name}}) => {
 
   const getFormatDataTransactions = useMemo(() => {
     if (data) {
-      const array = data.result.map(item => {
+      const array = data?.result.map(item => {
         return {
           hash: item.hash,
           to: item.to,

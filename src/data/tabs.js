@@ -1,6 +1,7 @@
-import IndexerTable from '../components/IndexerTable';
+import IndexerTable from '../components/TabPanel/IndexerTable';
+import Rewards from '../components/TabPanel/Rewards';
 
 export const TAB_NAMES = [
-  {label: 'Indexers', children: <IndexerTable/>},
-  {label: 'Subgraphs', children: '2'}
+  {key: 1, label: 'Indexers', children: <IndexerTable/>},
+  {key: 2, label: 'Rewards', children: <Rewards/>}
 ];

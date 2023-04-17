@@ -1,19 +1,17 @@
 import Head from 'next/head';
 import styles from '../styles/pages/Home.module.scss';
 import {ApolloClient, gql, InMemoryCache} from '@apollo/client';
-import Tab from '../components/Tab';
+import TabPanel from '../components/TabPanel';
 import {TAB_NAMES} from '../data/tabs';
 
 export default function Home() {
-  console.log(process.env.NEXT_PUBLIC_ETHERSCAN_API);
-
   return (
     <div className={styles.container}>
       <Head>
         <title>The Graph</title>
       </Head>
       <main className={styles.main}>
-        <Tab items={TAB_NAMES}/>
+        <TabPanel items={TAB_NAMES}/>
       </main>
     </div>
   );

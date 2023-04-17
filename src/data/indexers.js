@@ -20,3 +20,21 @@ export const INDEXERS_DATA = [
     indexer: '0x55F3DCDaf0b73f7f0c761a9070d8865F37986e2C'
   },
 ];
+
+export const BENEFICIARIES = [
+  {
+    beneficiary: '0x07eB5c56Ee6d928fc5faAA89e74422c6c64bF786',
+    operator: '0x07eB5c56Ee6d928fc5faAA89e74422c6c64bF786',
+    name: 'Making Cash'
+  },
+  {
+    beneficiary: '0x298AB592dD0362A499514800A7feED13C2B13362',
+    operator: '0xF86ff6526507Fd0b755Bd83d3E901a3f31f48f3f',
+    name: 'Stake Service'
+  },
+  {
+    beneficiary: '0xBE211C00d18eBd99E1d0250114D460929658Fe34',
+    operator: '0xd0E30E573cA5D8047D153A1e450f3D3A6B89Bc8B',
+    name: 'Alive'
+  }
+];

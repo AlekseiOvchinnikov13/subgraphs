@@ -1,12 +1,12 @@
-import {INDEXERS_DATA, TABLE_COLUMNS} from '../../data/indexers';
-import useIndexer from '../../hooks/useIndexer';
-import styles from '../../styles/components/IndexerTable.module.scss';
-import Loader from '../Loader';
-import DataCell from '../DataCell';
-import DataRow from '../DataRow';
-import {getColumnTitlesRow} from '../../utils';
+import {INDEXERS_DATA, TABLE_COLUMNS} from '../../../data/indexers';
+import useIndexer from '../../../hooks/useIndexer';
+import styles from '../../../styles/components/IndexerTable.module.scss';
+import Loader from '../../Loader';
+import DataCell from '../../DataCell';
+import DataRow from '../../DataRow';
+import {getColumnTitlesRow} from '../../../utils';
 import {Table} from 'antd';
-import {INDEXERS_COLUMNS} from '../../data/columns';
+import {INDEXERS_COLUMNS} from '../../../data/columns';
 
 const IndexerTable = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
